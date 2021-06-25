@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[BRAKKE TAB]]>
+    </line>
+    <line>
+      <![CDATA[DETTOL INSTANT HAND SANITIZER 50ML]]>
+    </line>
+    <line>
+      <![CDATA[DETTOL INSTANT HAND SANITIZER 200ML]]>
+    </line>
+    <line>
+      <![CDATA[DETTOL INSTANT HAND SANITIZER ORIGINAL 500ML]]>
+    </line>
+    <line>
+      <![CDATA[FACE MASK DISPOSABLE ELASTIC]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-06-24T07:07:42Z" name="Suite" finished-at="2021-06-24T07:09:15Z" duration-ms="93286">
+    <groups>
+    </groups>
+    <test started-at="2021-06-24T07:07:42Z" name="Test" finished-at="2021-06-24T07:09:15Z" duration-ms="93286">
+      <class name="com.qa.testscript.TC_Medplus">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.qa.testscript.TC_Medplus@28975c28]" started-at="2021-06-24T07:07:42Z" name="setup" finished-at="2021-06-24T07:07:50Z" duration-ms="8366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.medplusmart.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="MedplusLogin(java.lang.String, java.lang.String)[pri:1, instance:com.qa.testscript.TC_Medplus@28975c28]" started-at="2021-06-24T07:07:54Z" name="MedplusLogin" data-provider="getData" finished-at="2021-06-24T07:08:07Z" duration-ms="13380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9340407434]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Shraddha@146]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MedplusLogin -->
+        <test-method signature="MedplusSearch(java.lang.String)[pri:2, instance:com.qa.testscript.TC_Medplus@28975c28]" started-at="2021-06-24T07:08:08Z" name="MedplusSearch" data-provider="getDataForMedplusSearch" finished-at="2021-06-24T07:08:28Z" depends-on-methods="com.qa.testscript.TC_Medplus.MedplusLogin" duration-ms="20392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[BRAKEE TAB]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[BRAKKE TAB]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MedplusSearch -->
+        <test-method signature="MedplusSearch(java.lang.String)[pri:2, instance:com.qa.testscript.TC_Medplus@28975c28]" started-at="2021-06-24T07:08:28Z" name="MedplusSearch" data-provider="getDataForMedplusSearch" finished-at="2021-06-24T07:08:49Z" depends-on-methods="com.qa.testscript.TC_Medplus.MedplusLogin" duration-ms="20889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DETTOL INSTANT  HAND SANITIZER]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[DETTOL INSTANT HAND SANITIZER 50ML]]>
+            </line>
+            <line>
+              <![CDATA[DETTOL INSTANT HAND SANITIZER 200ML]]>
+            </line>
+            <line>
+              <![CDATA[DETTOL INSTANT HAND SANITIZER ORIGINAL 500ML]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MedplusSearch -->
+        <test-method signature="MedplusSearch(java.lang.String)[pri:2, instance:com.qa.testscript.TC_Medplus@28975c28]" started-at="2021-06-24T07:08:49Z" name="MedplusSearch" data-provider="getDataForMedplusSearch" finished-at="2021-06-24T07:09:10Z" depends-on-methods="com.qa.testscript.TC_Medplus.MedplusLogin" duration-ms="20783" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FACE MASK  DISPOSABLE ELASTIC]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[FACE MASK DISPOSABLE ELASTIC]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MedplusSearch -->
+        <test-method signature="medplussignout()[pri:3, instance:com.qa.testscript.TC_Medplus@28975c28]" started-at="2021-06-24T07:09:10Z" name="medplussignout" finished-at="2021-06-24T07:09:15Z" depends-on-methods="com.qa.testscript.TC_Medplus.MedplusSearch" duration-ms="4687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- medplussignout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testscript.TC_Medplus@28975c28]" started-at="2021-06-24T07:09:15Z" name="tearDown" finished-at="2021-06-24T07:09:15Z" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testscript.TC_Medplus -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

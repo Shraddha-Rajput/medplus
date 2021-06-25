@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation Testing]" guice-stage="DEVELOPMENT">
+  <parameter name="Url" value="https://www.medplusmart.com/"/>
+  <listeners>
+    <listener class-name="com.qa.utility.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Functional Testing(failed)">
+    <classes>
+      <class name="com.qa.medplus.TC_Medplus">
+        <methods>
+          <include name="MedplusSearch"/>
+          <include name="MedplusLogin"/>
+          <include name="medplussignout"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.medplus.TC_Medplus -->
+    </classes>
+  </test> <!-- Functional Testing(failed) -->
+</suite> <!-- Failed suite [Automation Testing] -->

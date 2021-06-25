@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.qa.utility.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="Url" value="https://www.medplusmart.com/"/>
+    <classes>
+      <class name="com.qa.testscript.TC_Medplus">
+        <methods>
+          <include name="MedplusSearch" invocation-numbers="0 1 2"/>
+          <include name="MedplusLogin"/>
+          <include name="setup"/>
+          <include name="medplussignout"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.testscript.TC_Medplus -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
